@@ -1,0 +1,7 @@
+print("This is a program to convert miles into kilometers.")
+miles = float(input("Enter a value in miles which you want to convert to kilometers"))
+def convert(x):
+	kms = 1.6 * x
+	return round(kms, 2)
+result = convert(miles)
+print(miles, " miles is approximately ", result, " kilometers.")
