@@ -1,0 +1,24 @@
+fact = 1
+res=[]
+act=[]
+while True:
+    print('Enter a number')
+    num = int(input())
+    #print('you have entered',num)
+    act.append(num)
+    for num in range(num,1,-1):
+        fact=fact*num
+    #print("It's factorial is",fact)
+    res.append(fact)
+    fact = 1
+    def more():
+        print("Do you want to find factorials of more numbers? Type Y/y for yes and N/n for no")
+        rep = input()
+        return rep
+    r = more()
+    if r == 'Y' or r == 'y':
+        continue
+    else:
+        break
+print("You wanted to find the factorial(s) of: ", act)
+print("And their respective factorial(s) are: ", res)
